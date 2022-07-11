@@ -1,0 +1,7 @@
+- name: creates a folder
+  hosts: localhost
+  tasks: 
+    - name: creates the folder
+      file: 
+        path: /tmp/ansible-test
+        state: directory
