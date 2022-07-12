@@ -1,0 +1,11 @@
+#installing and starting apache using ansible 
+---
+- name: starting apache
+  host: localhost
+  tasks: 
+    - yum: 
+        name: httpd
+        state: installed
+    - service: 
+        name: httpd
+        state: started
